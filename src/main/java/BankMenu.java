@@ -24,9 +24,11 @@ public class BankMenu {
             System.out.println("4. exit");
             int userChoice = userInputScanner.nextInt();
             if(userChoice == 1){
+                System.out.print("amount: ");
                 double amount = userInputScanner.nextDouble();
                 bankService.deposit(amount);
             }else if(userChoice == 2){
+                System.out.print("amount: ");
                 double amount = userInputScanner.nextDouble();
                 bankService.withdraw(amount);
             }else if(userChoice == 3){
